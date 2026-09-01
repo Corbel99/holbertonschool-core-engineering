@@ -4,7 +4,7 @@ number = __import__('random').randint(-10000, 10000)
 
 digit = number % 10
 
-if digit < 0:
+if number < 0:
     digit = -digit
 
 if digit > 5:
