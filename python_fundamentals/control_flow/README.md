@@ -2,74 +2,83 @@
 
 ## Description
 
-Ce projet permet de découvrir le contrôle du flux en Python.
+This project introduces control flow in Python.
 
-Le contrôle du flux permet à un programme de :
+Control flow allows a program to:
 
-- exécuter différentes instructions selon une condition ;
-- répéter des instructions avec des boucles ;
-- combiner plusieurs conditions logiques.
+* execute different instructions depending on a condition;
+* repeat instructions using loops;
+* combine multiple logical conditions.
 
-Le projet porte principalement sur :
+The project mainly covers:
 
-- `if`
-- `elif`
-- `else`
-- les opérateurs de comparaison ;
-- la logique booléenne ;
-- les boucles `while` ;
-- les boucles `for` avec `range()`.
+* `if`
+* `elif`
+* `else`
+* comparison operators;
+* Boolean logic;
+* `while` loops;
+* `for` loops with `range()`.
 
-## Objectifs
+## Objectives
 
-À la fin du projet, je dois être capable de :
+By the end of the project, I should be able to:
 
-- écrire des conditions avec `if`, `elif` et `else` ;
-- utiliser correctement les opérateurs de comparaison et logiques ;
-- utiliser `while` et `for` pour répéter des instructions ;
-- comprendre les limites et les différentes itérations d'une boucle ;
-- produire une sortie formatée ;
-- combiner des conditions et des boucles pour obtenir un résultat déterministe.
+* write conditions using `if`, `elif`, and `else`;
+* correctly use comparison and logical operators;
+* use `while` and `for` to repeat instructions;
+* understand the limits and different iterations of a loop;
+* produce formatted output;
+* combine conditions and loops to obtain a deterministic result.
 
-## Contraintes
+## Constraints
 
-- Les corrections sont effectuées sur Ubuntu 20.04 LTS.
-- La version de Python utilisée est Python 3.8.x.
-- Chaque fichier Python doit commencer exactement par :
-  `#!/usr/bin/env python3`
-- Chaque fichier doit être exécutable.
-- Chaque fichier doit se terminer par une nouvelle ligne.
-- Le code doit respecter PEP8 avec `pycodestyle 2.7.x`.
-- Aucune bibliothèque externe n'est autorisée.
-- Aucune fonction ne doit être créée dans ce projet.
-- Aucun import ne doit être utilisé.
-- La sortie doit respecter exactement le format attendu.
+* Corrections are performed on Ubuntu 20.04 LTS.
+* The Python version used is Python 3.8.x.
+* Every Python file must begin exactly with:
 
-## Ressources
+```python
+#!/usr/bin/env python3
+```
 
-- Python Tutorial — Control Flow Tools
+* Every file must be executable.
+* Every file must end with a newline.
+* The code must comply with PEP8 using `pycodestyle 2.7.x`.
+* No external libraries are allowed.
+* No functions should be created in this project.
+* No imports should be used.
+* The output must exactly match the expected format.
+
+## Resources
+
+* Python Tutorial — Control Flow Tools
   https://docs.python.org/3/tutorial/controlflow.html
 
-- Python Tutorial — More on Conditions
+* Python Tutorial — More on Conditions
   https://docs.python.org/3/reference/expressions.html#comparisons
 
-## Tâches
+## Tasks
 
 ### 0. Positive anything is better than negative nothing
 
-Créer un script qui attribue un entier aléatoire à une variable appelée `number`.
+Create a script that assigns a random integer to a variable called `number`.
 
-Le programme utilise ensuite des conditions pour afficher :
+The program then uses conditions to print:
 
-- `<number> is positive` si le nombre est supérieur à `0` ;
-- `<number> is zero` si le nombre est égal à `0` ;
-- `<number> is negative` si le nombre est inférieur à `0`.
+* `<number> is positive` if the number is greater than `0`;
+* `<number> is zero` if the number is equal to `0`;
+* `<number> is negative` if the number is less than `0`.
 
-La structure utilisée est :
+The structure used is:
 
 ```text
 if
- ↓
+
+↓
+
 elif
- ↓
+
+↓
+
 else
+```
