@@ -4,4 +4,4 @@ alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 for i in alphabet:
     if i != 'e' and i != 'q':
-        print("{}".format(i), end='\n' if i == 'z' else '')
+        print("{}".format(i), end='')
