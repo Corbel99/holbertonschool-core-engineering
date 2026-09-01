@@ -2,41 +2,41 @@
 
 ## Introduction
 
-À mesure que les programmes grandissent, répéter la même logique devient inefficace et augmente les risques d'erreurs.
+As programs grow, repeating logic becomes inefficient and error-prone.
 
-Les **fonctions** permettent d'encapsuler un comportement dans des blocs de code réutilisables.
+**Functions** allow you to encapsulate behavior into reusable blocks.
 
-Les **modules** permettent d'organiser ces fonctions dans différents fichiers et de les réutiliser correctement.
+**Modules** allow you to organize those functions into separate files and reuse them safely.
 
-Ce projet introduit progressivement :
+This project introduces:
 
-* la définition des fonctions et les valeurs de retour ;
-* le déroulement de l'exécution à l'intérieur et à l'extérieur des fonctions ;
-* la distinction entre `print` et `return` ;
-* la manière dont Python exécute un fichier ;
-* l'effet de l'importation d'un fichier sur son exécution ;
-* la réutilisation de fonctions et de variables provenant d'autres fichiers.
+* Function definition and return values
+* Execution flow inside and outside functions
+* Separation between printing and returning
+* How Python executes a file
+* How importing a file affects execution
+* How to reuse functions and variables across files
 
-L'ordre des exercices est intentionnel. Le projet progresse de la définition de fonctions jusqu'à l'organisation sûre du code dans plusieurs fichiers.
-
----
-
-## Objectifs d'apprentissage
-
-À la fin de ce projet, je dois être capable de :
-
-* définir des fonctions avec des paramètres et des valeurs de retour ;
-* distinguer clairement `print` et `return` ;
-* implémenter une logique dans des fonctions avec des conditions et des boucles ;
-* comprendre comment Python exécute le code situé au niveau principal d'un fichier ;
-* expliquer ce que fait `if __name__ == "__main__"` et pourquoi il est nécessaire ;
-* importer des fonctions depuis d'autres fichiers ;
-* importer des variables depuis d'autres fichiers ;
-* écrire des scripts qui se comportent correctement lorsqu'ils sont exécutés directement et lorsqu'ils sont importés.
+The order of the exercises is intentional. The project progresses from defining functions to safely organizing code across multiple files.
 
 ---
 
-## Ressources
+## Learning Objectives
+
+By the end of this project, you should be able to:
+
+* Define functions with parameters and return values.
+* Distinguish clearly between `print` and `return`.
+* Implement logic inside functions using conditionals and loops.
+* Understand how Python executes top-level code in a file.
+* Explain what `if __name__ == "__main__"` does and why it is necessary.
+* Import functions from other files.
+* Import variables from other files.
+* Write scripts that behave correctly when executed and when imported.
+
+---
+
+## Resources
 
 * Python Tutorial — Defining Functions
   https://docs.python.org/3/tutorial/controlflow.html#defining-functions
@@ -52,39 +52,30 @@ L'ordre des exercices est intentionnel. Le projet progresse de la définition de
 
 ---
 
-## Contraintes générales
+## General Requirements
 
-Les corrections seront exécutées sur :
+Corrections will run on:
 
 * **Ubuntu 20.04 LTS**
 * **Python 3.8.x**
 
-### Fichiers Python
-
-La première ligne de chaque fichier Python doit être exactement :
+The first line of every Python file must be exactly:
 
 ```python
 #!/usr/bin/env python3
 ```
 
-Tous les fichiers doivent :
+All files must:
 
-* être exécutables ;
-* se terminer par une nouvelle ligne ;
-* respecter le style **PEP8** ;
-* être compatibles avec **pycodestyle 2.7.x**.
+* Be executable.
+* End with a newline.
+* Be PEP8 compliant using `pycodestyle 2.7.x`.
 
-### Bibliothèques
+No external libraries are allowed.
 
-Aucune bibliothèque externe n'est autorisée.
+No use of `sys.argv` is allowed in this project.
 
-### Arguments
-
-L'utilisation de `sys.argv` est interdite dans ce projet.
-
-### Exercices
-
-Chaque tâche doit respecter précisément ses propres contraintes.
+Each task must follow its own constraints precisely.
 
 ---
 
@@ -92,26 +83,26 @@ Chaque tâche doit respecter précisément ses propres contraintes.
 
 ## 0. islower
 
-### Objectif
+### Objective
 
-Écrire une fonction :
+Write a function:
 
 ```python
 def islower(c):
 ```
 
-La fonction doit retourner :
+The function must return:
 
-* `True` si `c` est une lettre minuscule ;
-* `False` dans tous les autres cas.
+* `True` if `c` is a lowercase letter.
+* `False` otherwise.
 
-### Contraintes
+### Constraints
 
-* Ne pas utiliser les méthodes intégrées des chaînes de caractères telles que `.islower()`.
-* Utiliser la logique ASCII avec `ord()`.
-* La fonction doit retourner une valeur booléenne.
+* You are not allowed to use built-in string methods such as `.islower()`.
+* You must use ASCII logic with `ord()`.
+* The function must return a boolean value.
 
-### Exemples
+### Examples
 
 ```python
 >>> islower('a')
@@ -122,46 +113,46 @@ False
 False
 ```
 
-### Dépôt
+### Repository
 
-**Repository :**
+**GitHub repository:**
 
 `holbertonschool-core-engineering`
 
-**Directory :**
+**Directory:**
 
 `python_fundamentals/functions_modules`
 
-**File :**
+**File:**
 
 `islower.py`
 
 ---
 
-## Progression du projet
+## Project Progression
 
-Le projet suit progressivement cette logique :
+The exercises progressively cover:
 
 ```text
-Fonctions
-    ↓
-Paramètres
-    ↓
-Valeurs de retour
-    ↓
+Function definition
+        ↓
+Parameters
+        ↓
+Return values
+        ↓
 print vs return
-    ↓
-Conditions et boucles
-    ↓
-Exécution d'un fichier Python
-    ↓
+        ↓
+Conditionals and loops
+        ↓
+Python file execution
+        ↓
 __name__ == "__main__"
-    ↓
-Importation de fonctions
-    ↓
-Importation de variables
-    ↓
-Modularité
+        ↓
+Importing functions
+        ↓
+Importing variables
+        ↓
+Modularity
 ```
 
-L'objectif général est de comprendre **comment écrire des fonctions réutilisables et comment organiser correctement du code Python dans plusieurs fichiers**.
+The overall goal is to understand how to write reusable functions and how to properly organize Python code across multiple files.
