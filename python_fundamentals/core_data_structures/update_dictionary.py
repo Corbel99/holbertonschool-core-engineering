@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def uptade_dictionary(a_dictionary, key, value):
+def update_dictionary(a_dictionary, key, value):
     """
     Updates a dictionary with a new key-value pair.
 
