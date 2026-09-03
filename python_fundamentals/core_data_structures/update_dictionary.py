@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+def uptade_dictionary(a_dictionary, key, value):
+    """
+    Updates a dictionary with a new key-value pair.
+
+    Args:
+        a_dictionary (dict): The dictionary to update.
+        key: The key to add or update in the dictionary.
+        value: The value associated with the key.
+
+    Returns:
+        dict: The updated dictionary.
+    """
+    a_dictionary[key] = value
+    return a_dictionary
