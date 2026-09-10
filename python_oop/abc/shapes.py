@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+"""
+This module defines abstract shapes and their implementations.
+"""
+
+from abc import ABC, abstractmethod
+import math
+
+
 class Shape(ABC):
     """
     Abstract base class representing a shape.
