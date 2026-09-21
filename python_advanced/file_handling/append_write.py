@@ -2,7 +2,7 @@
 """Module for appending text to a file."""
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """Append a string to a text file and return
     the number of characters added."""
     with open(filename, "a")as f:
