@@ -8,6 +8,7 @@ async def homepage(request):
     """Return the home page."""
     return HTMLResponse("<h1>WebSocket Echo</h1>")
 
+
 async def websocket_endpoint(connection):
     """Echo every message received on /ws."""
     await connection.accept()
